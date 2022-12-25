@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 Benzo Rom
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:androidprv="http://schemas.android.com/apk/prv/res/android">
+    <style name="AssistGestureTrainingProgressBar">
+        <item name="android:padding">8dp</item>
+    </style>
+    <style name="BottomSheetButton" parent="@android:style/Widget.DeviceDefault.Button.Colored">
+        <item name="android:colorBackground">?android:attr/colorAccent</item>
+        <item name="android:textColor">?android:attr/colorBackground</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="BottomSheetButtonBorderless" parent="@android:style/Widget.DeviceDefault.Button.Borderless.Colored">
+        <item name="android:textColor">?android:attr/colorAccent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="BottomSheetStyle" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar.Fullscreen">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+    <style name="ContextualSuggestionCardStyle">
+        <item name="cardBackgroundColor">?androidprv:attr/colorAccentPrimary</item>
+        <item name="cardCornerRadius">@dimen/suggestion_card_corner_radius</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+    <style name="ContextualSuggestionCardStyle.TwoPane" parent="@style/ContextualSuggestionCardStyle">
+        <item name="cardBackgroundColor">?androidprv:attr/colorSurface</item>
+    </style>
+    <style name="DreamSudCardStyle" parent="@style/DreamCardStyle">
+        <item name="cardBackgroundColor">@color/dream_card_suw_color_state_list</item>
+    </style>
+    <style name="HatsLibFlatButton" parent="@style/Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/hats_lib_survey_highlight_color</item>
+    </style>
+    <style name="HatsLibPromptTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:colorControlNormal">@color/hats_lib_survey_control_normal</item>
+        <item name="android:colorControlActivated">#4285f4</item>
+        <item name="android:colorPrimaryDark">@android:color/transparent</item>
+    </style>
+    <style name="HatsLibQuestionTextStyle" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/hats_lib_survey_question_text_color</item>
+        <item name="android:background">@color/hats_lib_white_100</item>
+        <item name="android:lineSpacingMultiplier">@dimen/hats_lib_survey_header_question_line_spacing_multiplier</item>
+    </style>
+    <style name="HatsLibThankYouTextStyle" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/hats_lib_prompt_text_color</item>
+        <item name="android:fontFamily">roboto-medium</item>
+    </style>
+    <style name="MarlinColors">
+        <item name="color_iphonecircle">#cecece</item>
+        <item name="color_iphoneface">#ededed</item>
+        <item name="color_iphoneoutline">#cecece</item>
+        <item name="color_nexusface">#ededed</item>
+        <item name="color_nexusoutline">#cecece</item>
+        <item name="fingerprint_sensor_location_color1">#c6c6c6</item>
+        <item name="fingerprint_sensor_location_color2">#dddddd</item>
+        <item name="fingerprint_sensor_location_color3">#d6d6d6</item>
+        <item name="fingerprint_sensor_location_color4">#afafaf</item>
+        <item name="fingerprint_sensor_location_color5">#afafaf</item>
+        <item name="fingerprint_sensor_location_color6">#9b9b9b</item>
+        <item name="fingerprint_sensor_location_color7">#cecece</item>
+    </style>
+    <style name="MarlinColors.Blue" parent="@style/MarlinColors"/>
+    <style name="MarlinColors.Graphite" parent="@style/MarlinColors"/>
+    <style name="MarlinColors.Silver" parent="@style/MarlinColors"/>
+    <style name="SecurityShowMoreWarningsCard" parent="@style/ContextualCardStyle">
+        <item name="strokeWidth">0dp</item>
+    </style>
+    <style name="SuggestionCardIcon">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginStart">12dp</item>
+        <item name="android:layout_marginEnd">12dp</item>
+        <item name="android:layout_alignParentStart">false</item>
+    </style>
+    <style name="SuggestionCardIconStyle">
+        <item name="android:tint">?android:attr/textColorPrimary</item>
+    </style>
+    <style name="SuggestionCardIconStyle.TwoPane" parent="@style/SuggestionCardIconStyle">
+        <item name="android:tint">?android:attr/textColorPrimary</item>
+    </style>
+    <style name="SuggestionCardSummaryColor">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+    <style name="SuggestionCardText">
+        <item name="android:textAlignment">center</item>
+    </style>
+    <style name="SuggestionCardTitleColor">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+    <style name="TextAppearance.FaceErrorText" parent="@android:style/TextAppearance.Material.Body1">
+        <item name="android:textColor">?android:attr/colorError</item>
+    </style>
+    <style name="TextAppearance.SecurityShowMoreTitle" parent="@style/TextAppearance.SecurityStatusSummary">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+    <style name="TextAppearance.SecurityStatusSummary" parent="@android:style/TextAppearance.DeviceDefault.Small">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+        <item name="android:fontFamily">@*android:string/config_bodyFontFamily</item>
+    </style>
+    <style name="TextAppearance.SecurityStatusTitle" parent="@android:style/TextAppearance.DeviceDefault.Medium">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:fontFamily">@*android:string/config_headlineFontFamily</item>
+    </style>
+    <style name="TextAppearance.SuggestionCardSummary" parent="@style/SuggestionCardSummaryColor">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@*android:string/config_bodyFontFamily</item>
+    </style>
+    <style name="TextAppearance.SuggestionCardSummary.TwoPane" parent="@style/TextAppearance.SuggestionCardSummary">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+    <style name="TextAppearance.SuggestionCardTitle" parent="@style/SuggestionCardTitleColor">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@*android:string/config_headlineFontFamily</item>
+    </style>
+    <style name="TextAppearance.SuggestionCardTitle.TwoPane" parent="@style/TextAppearance.SuggestionCardTitle">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+    <style name="VpnSettingsTheme" parent="@style/Theme.SubSettingsBase">
+        <item name="android:clipChildren">false</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+</resources>

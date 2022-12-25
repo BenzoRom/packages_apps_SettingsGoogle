@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 Benzo Rom
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <attr name="autoResizeText_minTextSize" format="dimension"/>
+    <attr name="autoResizeText_resizeStepUnit">
+        <enum name="unitDip" value="1" />
+        <enum name="unitIn" value="4" />
+        <enum name="unitMm" value="5" />
+        <enum name="unitPt" value="3" />
+        <enum name="unitPx" value="0" />
+        <enum name="unitSp" value="2" />
+    </attr>
+    <attr name="color_iphonecircle" format="color"/>
+    <attr name="color_iphoneface" format="color"/>
+    <attr name="color_iphoneoutline" format="color"/>
+    <attr name="color_nexusface" format="color"/>
+    <attr name="color_nexusoutline" format="color"/>
+    <attr name="fingerprint_sensor_location_color1" format="color"/>
+    <attr name="fingerprint_sensor_location_color2" format="color"/>
+    <attr name="fingerprint_sensor_location_color3" format="color"/>
+    <attr name="fingerprint_sensor_location_color4" format="color"/>
+    <attr name="fingerprint_sensor_location_color5" format="color"/>
+    <attr name="fingerprint_sensor_location_color6" format="color"/>
+    <attr name="fingerprint_sensor_location_color7" format="color"/>
+    <attr name="firstAction" format="string"/>
+    <attr name="name" format="string"/>
+    <attr name="resultCode" format="integer"/>
+    <attr name="script" format="string"/>
+    <attr name="secureValue" format="string"/>
+    <attr name="textSizeMaxDp" format="dimension"/>
+    <attr name="title" format="string"/>
+    <attr name="uri" format="string"/>
+    <attr name="version" format="integer"/>
+</resources>

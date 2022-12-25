@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 Benzo Rom
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:height="32dp"
+        android:width="32dp"
+        android:viewportWidth="24"
+        android:viewportHeight="24">
+    <path
+        android:fillColor="?android:attr/colorAccent"
+        android:pathData="M8,2C6.9,2 6,2.9 6,4L6,20C6,21.1 6.9,22 8,22L16,22C17.1,22 18,21.1 18,20L18,4C18,2.9 17.1,2.01 16,2.01L8,2zM8,4L16,4L16,5L8,5L8,4zM3,7L3,14L5,14L5,7L3,7zM8,7L16,7L16,17L8,17L8,7zM22,7L22,14L24,14L24,7L22,7zM0,10L0,17L2,17L2,10L0,10zM19,10L19,17L21,17L21,10L19,10zM8,19L16,19L16,20L8,20L8,19z"/>
+</vector>

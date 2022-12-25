@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 Benzo Rom
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<com.google.android.setupdesign.GlifLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:icon="@drawable/ic_quick_tap"
+    android:clipChildren="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:sucHeaderText="@string/columbus_gesture_training_enrolling_title">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/columbus_animation_layout_width"
+        android:layout_height="@dimen/columbus_animation_layout_height"
+        android:importantForAccessibility="no"
+        app:lottie_rawRes="@raw/gesture_columbus_circle"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+
+    <com.google.android.settings.gestures.columbus.ColumbusEnrollingIllustration
+        android:id="@+id/columbus_gesture_illustration"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/columbus_illustration_layout_width"
+        android:layout_height="@dimen/columbus_illustration_layout_height"
+        android:importantForAccessibility="no"/>
+
+</com.google.android.setupdesign.GlifLayout>

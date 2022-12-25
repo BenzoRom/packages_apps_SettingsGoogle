@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 Benzo Rom
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <color name="active_edge_indicator">#4182ef</color>
+    <color name="battery_bad_color_light">#d93025</color>
+    <color name="battery_good_color_light">#1e8e3e</color>
+    <color name="battery_maybe_color_light">#e37400</color>
+    <color name="blue_500">#4285f4</color>
+    <color name="browser_actions_bg_grey">#f5f5f5</color>
+    <color name="browser_actions_divider_color">#1e000000</color>
+    <color name="browser_actions_text_color">#de000000</color>
+    <color name="browser_actions_title_color">#646464</color>
+    <color name="columbus_highlight">#82b1ff</color>
+    <color name="contextual_card_dismissal_background">#f1f3f4</color>
+    <color name="face_enroll_cell_enrolled">#14ffffff</color>
+    <color name="face_enroll_cell_no_activity_end">#ffd2e3fc</color>
+    <color name="face_enroll_cell_no_activity_start">#00d2e3fc</color>
+    <color name="face_enroll_cell_not_enrolled">#4285f4</color>
+    <color name="face_enroll_cell_not_enrolled_primary">#b24285f4</color>
+    <color name="face_enroll_cell_not_enrolled_secondary">#00ffffff</color>
+    <color name="face_enroll_check_color">#42a5f5</color>
+    <color name="face_enroll_cursor_acquired">#ffffffff</color>
+    <color name="face_enroll_cursor_gone">#00ffffff</color>
+    <color name="face_enroll_cursor_shadow">#ff979797</color>
+    <color name="face_enroll_grid">#e0dadec0</color>
+    <color name="face_enroll_indicator">#ff1a73e8</color>
+    <color name="face_enroll_no_activity_gone">#00000000</color>
+    <color name="face_enroll_no_activity_showing">#6637474f</color>
+    <color name="face_enroll_out_of_fov_gone">#0037474f</color>
+    <color name="face_enroll_out_of_fov_showing">#b237474f</color>
+    <color name="face_enroll_pulse_circle_gone">#00ffffff</color>
+    <color name="face_enroll_pulse_circle_showing">#ffffffff</color>
+    <color name="face_enroll_single_capture_rotating_1">#ff1a73e8</color>
+    <color name="face_enroll_single_capture_rotating_2">#ff669df6</color>
+    <color name="face_enroll_single_capture_rotating_3">#ffaecbfa</color>
+    <color name="face_enroll_single_capture_rotating_4">#ffe8f0fe</color>
+    <color name="face_pill_idle">#dadce0</color>
+    <color name="face_pill_pulsing">#bdc1c6</color>
+    <color name="face_pill_shrinked">#4285f4</color>
+    <color name="face_progress_bar_complete">#1a73e8</color>
+    <color name="hats_lib_checkbox_tint">#8c333333</color>
+    <color name="hats_lib_open_text_underline">#4285f4</color>
+    <color name="hats_lib_prompt_take_survey_blue">#4285f4</color>
+    <color name="hats_lib_prompt_take_survey_blue_focused">#21437c</color>
+    <color name="hats_lib_prompt_take_survey_blue_pressed">#3d7ce3</color>
+    <color name="hats_lib_prompt_text_color">#212121</color>
+    <color name="hats_lib_survey_control_normal">#9b9b9b</color>
+    <color name="hats_lib_survey_highlight_color">#eeeeee</color>
+    <color name="hats_lib_survey_question_text_color">#333333</color>
+    <color name="hats_lib_survey_text_color">#757575</color>
+    <color name="hats_lib_survey_white_ripple_color">#757575</color>
+    <color name="hats_lib_survey_white_shape_color">#ffffff</color>
+    <color name="hats_lib_survey_white_shape_focused_color">#848484</color>
+    <color name="hats_lib_survey_white_shape_pressed_color">#eeeeee</color>
+    <color name="hats_lib_white_100">#ffffff</color>
+    <color name="icon_launcher_setting_color">@color/material_blue_500</color>
+    <color name="material_grey_100">#fff5f5f5</color>
+    <color name="security_green">#1e8e3e</color>
+    <color name="security_red">#d93025</color>
+    <color name="security_status_unfilled_wedge">#dadce0</color>
+    <color name="security_yellow">#f9ab00</color>
+    <color name="sud_system_neutral1_900">@android:color/system_neutral1_900</color>
+    <color name="sud_system_primary_text">@color/sud_system_neutral1_900</color>
+</resources>

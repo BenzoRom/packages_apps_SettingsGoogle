@@ -1,0 +1,16 @@
+-keep class com.android.setupwizardlib.** { *; }
+-keep class com.android.vending.** { *; }
+-keep class com.android.wsuinterface.** { *; }
+-keep class com.google.** { *; }
+-keep class vendor.** { *; }
+
+-dontwarn **-IA
+-dontwarn androidx.window.*
+
+-keepattributes InnerClasses
+-keep class **.R
+-keep class **.R$* {
+    <fields>;
+}
+
+-include ../Settings/proguard.flags

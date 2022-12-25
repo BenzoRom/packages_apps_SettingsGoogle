@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 Benzo Rom
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+
+    <SeekBar
+        android:id="@+id/assist_gesture_sensitivity_seekbar"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="@integer/gesture_assist_sensitivity_max"
+        android:progress="@integer/gesture_assist_sensitivity_default"
+        android:layout_centerHorizontal="true"
+        style="@android:style/Widget.Material.SeekBar.Discrete"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp">
+
+        <TextView
+            android:layout_gravity="start|top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/assist_gesture_enrollment_seekbar_light"
+            android:layout_marginStart="16dp"/>
+
+        <TextView
+            android:layout_gravity="end|top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/assist_gesture_enrollment_seekbar_strong"
+            android:layout_marginEnd="16dp"/>
+
+    </FrameLayout>
+</merge>
