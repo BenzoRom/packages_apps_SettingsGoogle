@@ -15,7 +15,6 @@
      limitations under the License.
 -->
 <permissions>
-
     <privapp-permissions package="com.android.settings">
         <permission name="android.permission.ACCESS_CHECKIN_PROPERTIES"/>
         <permission name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
@@ -42,6 +41,7 @@
         <permission name="android.permission.CONFIGURE_WIFI_DISPLAY"/>
         <permission name="android.permission.CONTROL_DISPLAY_COLOR_TRANSFORMS"/>
         <permission name="android.permission.COPY_PROTECTED_DATA"/>
+        <permission name="android.permission.CUSTOMIZE_SYSTEM_UI"/>
         <permission name="android.permission.DELETE_PACKAGES"/>
         <permission name="android.permission.DEVICE_POWER"/>
         <permission name="android.permission.FORCE_STOP_PACKAGES"/>
@@ -139,8 +139,5 @@
         <permission name="com.google.android.settings.intelligence.BATTERY_DATA"/>
         <permission name="com.google.android.settings.routines.ROUTINES_ACTIONS"/>
         <permission name="com.google.android.settings.setup.dock.RUN_DOCK_SETUP"/>
-        <permission name="com.google.android.wildlife.permission.ADVANCED_VPN_CONFIG"/>
-        <permission name="com.google.android.wildlife.permission.VPN_APP_EXCLUSION_LAUNCH"/>
     </privapp-permissions>
-
 </permissions>

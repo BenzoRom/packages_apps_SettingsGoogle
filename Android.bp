@@ -57,7 +57,10 @@ android_app {
     certificate: "platform",
     system_ext_specific: true,
     privileged: true,
-    required: ["privapp_whitelist_com.google.android.settings"],
+    required: [
+        "privapp_whitelist_com.google.android.settings",
+        "settings-platform-compat-config",
+    ],
     static_libs: ["SettingsGoogle-core"],
     overrides: ["Settings"],
     uses_libs: ["org.apache.http.legacy"],

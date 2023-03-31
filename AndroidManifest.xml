@@ -19,8 +19,6 @@
     <uses-permission android:name="com.google.android.settings.intelligence.BATTERY_DATA"/>
     <uses-permission android:name="com.google.android.settings.routines.ROUTINES_ACTIONS"/>
     <uses-permission android:name="com.google.android.settings.setup.dock.RUN_DOCK_SETUP"/>
-    <uses-permission android:name="com.google.android.wildlife.permission.ADVANCED_VPN_CONFIG"/>
-    <uses-permission android:name="com.google.android.wildlife.permission.VPN_APP_EXCLUSION_LAUNCH"/>
 
     <application>
         <activity
@@ -303,39 +301,6 @@
         </activity>
 
         <activity
-            android:name="com.google.android.settings.setup.dock.WizardManagerActivity"
-            android:theme="@android:style/Theme.NoDisplay"
-            android:enabled="true"
-            android:exported="false"
-            android:excludeFromRecents="true"
-            android:immersive="true"
-            android:directBootAware="true">
-            <intent-filter>
-                <action android:name="com.android.settings.setup.dock.NEXT"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-        </activity>
-
-        <activity
-            android:theme="@style/SudThemeGlif.DayNight"
-            android:label="@string/dock_setup_welcome_title"
-            android:name="com.google.android.settings.setup.dock.DockWelcomeActivity"
-            android:permission="com.google.android.settings.setup.dock.RUN_DOCK_SETUP"
-            android:exported="true"
-            android:taskAffinity="com.android.settings.docksetup"
-            android:excludeFromRecents="true"
-            android:immersive="true"
-            android:directBootAware="true"
-            android:turnScreenOn="true">
-            <intent-filter>
-                <action android:name="com.android.settings.action.DOCK_WELCOME"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-            <meta-data android:name="com.android.settings.icon_tintable"
-                       android:value="true"/>
-        </activity>
-
-        <activity
             android:name="com.google.android.settings.dream.DreamSetupActivity"
             android:theme="@style/SudThemeGlif.DayNight"
             android:label="@string/dream_setup_title"
@@ -356,21 +321,6 @@
                        android:resource="@string/dream_setup_title"/>
             <meta-data android:name="com.android.settings.summary"
                        android:resource="@string/dream_setup_description"/>
-            <meta-data android:name="com.android.settings.icon_tintable"
-                       android:value="true"/>
-        </activity>
-
-        <activity
-            android:name="com.google.android.settings.setup.dock.DockOutroActivity"
-            android:theme="@style/SudThemeGlif.DayNight"
-            android:label="@string/dock_setup_outro_title"
-            android:exported="false"
-            android:excludeFromRecents="true"
-            android:immersive="true">
-            <intent-filter>
-                <action android:name="com.android.settings.action.DOCK_OUTRO"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
             <meta-data android:name="com.android.settings.icon_tintable"
                        android:value="true"/>
         </activity>
@@ -405,20 +355,6 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="com.google.android.settings.warranty.SUW_DIGITAL_WARRANTY"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-        </activity>
-
-        <activity
-            android:name="com.google.android.settings.vpn2.AppBypassActivity"
-            android:theme="@style/VpnSettingsTheme"
-            android:label="@string/vpn_app_bypass"
-            android:permission="com.google.android.wildlife.permission.VPN_APP_EXCLUSION_LAUNCH"
-            android:exported="true"
-            android:launchMode="singleTask"
-            android:screenOrientation="behind">
-            <intent-filter>
-                <action android:name="com.google.android.settings.action.LAUNCH_VPN_APP_EXCLUSION"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
@@ -469,36 +405,12 @@
             </intent-filter>
         </receiver>
 
-        <receiver
-            android:name="com.google.android.settings.vpn2.AppBypassBroadcastReceiver"
-            android:permission="com.google.android.wildlife.permission.VPN_APP_EXCLUSION_LAUNCH"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="com.google.android.settings.action.REMOVE_UNINSTALLED_APP"/>
-                <action android:name="com.google.android.settings.action.UPDATE_PREDEFINED_APP_EXCLUSION_LIST"/>
-            </intent-filter>
-        </receiver>
-
         <service
             android:name="com.google.android.settings.fuelgauge.BatteryUsageLoaderService"
             android:permission="android.permission.BIND_JOB_SERVICE"
             android:exported="false"
             android:process=":usage_data_loader">
         </service>
-
-        <service
-            android:name="com.google.android.settings.setup.dock.DockSetupSnoozeService"
-            android:permission="android.permission.BIND_JOB_SERVICE"
-            android:exported="false">
-        </service>
-
-        <provider
-            android:name="com.google.android.settings.vpn2.AdvancedVpnContentProvider"
-            android:permission="com.google.android.wildlife.permission.ADVANCED_VPN_CONFIG"
-            android:exported="true"
-            android:multiprocess="false"
-            android:authorities="com.google.android.settings.AdvancedVpnContentProvider">
-        </provider>
 
         <activity
             android:theme="@style/HatsLibPromptTheme"

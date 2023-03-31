@@ -145,8 +145,4 @@
     <style name="TextAppearance.SuggestionCardTitle.TwoPane" parent="@style/TextAppearance.SuggestionCardTitle">
         <item name="android:textColor">?android:attr/textColorPrimary</item>
     </style>
-    <style name="VpnSettingsTheme" parent="@style/Theme.SubSettingsBase">
-        <item name="android:clipChildren">false</item>
-        <item name="android:clipToPadding">false</item>
-    </style>
 </resources>

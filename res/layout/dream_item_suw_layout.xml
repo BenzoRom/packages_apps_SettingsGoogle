@@ -16,7 +16,7 @@
 
         <ImageView
             android:id="@+id/preview"
-            android:background="@drawable/dream_preview_rounded_bg"
+            android:background="@drawable/dream_item_suw_rounded_bg"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:importantForAccessibility="no"

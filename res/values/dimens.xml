@@ -16,23 +16,6 @@
 -->
 <resources>
     <dimen name="app_bar_height">64dp</dimen>
-    <dimen name="app_bypass_candidate_app_title_margin_bottom">18dp</dimen>
-    <dimen name="app_bypass_candidate_app_title_margin_top">24dp</dimen>
-    <dimen name="app_bypass_default_margin_end">26dp</dimen>
-    <dimen name="app_bypass_default_margin_start">24dp</dimen>
-    <dimen name="app_bypass_description_text_font_size">14sp</dimen>
-    <dimen name="app_bypass_enabled_app_hint_margin_bottom">32dp</dimen>
-    <dimen name="app_bypass_enabled_app_list_margin_bottom">30dp</dimen>
-    <dimen name="app_bypass_enabled_app_title_margin_top">40dp</dimen>
-    <dimen name="app_bypass_end_button_icon_padding">14dp</dimen>
-    <dimen name="app_bypass_end_button_margin_end">12dp</dimen>
-    <dimen name="app_bypass_end_button_margin_start">10dp</dimen>
-    <dimen name="app_bypass_end_button_size">48dp</dimen>
-    <dimen name="app_bypass_end_icon_size">20dp</dimen>
-    <dimen name="app_bypass_header_icon_margin_end">20dp</dimen>
-    <dimen name="app_bypass_header_icon_size">32dp</dimen>
-    <dimen name="app_bypass_list_item_height">64dp</dimen>
-    <dimen name="app_bypass_second_text_font_size">16sp</dimen>
     <dimen name="assist_error_distance_top">24dp</dimen>
     <dimen name="assist_gesture_error_text_appear_distance">16dp</dimen>
     <dimen name="assist_gesture_error_text_disappear_distance">-8dp</dimen>
@@ -126,7 +109,12 @@
     <dimen name="suggestion_card_text_padding_start">16dp</dimen>
     <dimen name="suggestion_card_text_padding_start_two_pane">24dp</dimen>
     <dimen name="suggestion_card_text_padding_vertical">18dp</dimen>
-    <dimen name="suw_dream_item_margin">8dp</dimen>
+    <dimen name="suw_dream_item_corner_radius">20dp</dimen>
+    <dimen name="suw_dream_item_icon_padding">10dp</dimen>
+    <dimen name="suw_dream_item_margin">4dp</dimen>
+    <dimen name="suw_dream_item_min_column_width">174dp</dimen>
+    <dimen name="suw_dream_preview_placeholder_margin_top">41dp</dimen>
+    <dimen name="suw_dream_preview_placeholder_width">24dp</dimen>
     <dimen name="suw_warranty_dialog_layout_margin_top">40dp</dimen>
     <dimen name="suw_warranty_dialog_layout_padding_end">24dp</dimen>
     <dimen name="suw_warranty_dialog_layout_padding_start">22dp</dimen>

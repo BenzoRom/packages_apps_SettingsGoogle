@@ -5,6 +5,7 @@ import android.app.admin.DevicePolicyManager;
 import android.content.Context;
 import android.util.Log;
 
+import com.android.settings.R;
 import com.android.settings.accessibility.AccessibilityMetricsFeatureProvider;
 import com.android.settings.accessibility.AccessibilitySearchFeatureProvider;
 import com.android.settings.accounts.AccountFeatureProvider;
@@ -23,7 +24,6 @@ import com.android.settings.overlay.SupportFeatureProvider;
 import com.android.settings.overlay.SurveyFeatureProvider;
 import com.android.settings.search.SearchFeatureProvider;
 import com.android.settings.security.SecuritySettingsFeatureProvider;
-import com.android.settings.vpn2.AdvancedVpnFeatureProvider;
 import com.android.settings.wifi.WifiTrackerLibProvider;
 import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
 import com.google.android.settings.accessibility.AccessibilityMetricsFeatureProviderGoogleImpl;
@@ -36,7 +36,7 @@ import com.google.android.settings.bluetooth.BluetoothFeatureProviderGoogleImpl;
 import com.google.android.settings.connecteddevice.dock.DockUpdaterFeatureProviderGoogleImpl;
 import com.google.android.settings.core.instrumentation.SettingsGoogleMetricsFeatureProvider;
 import com.google.android.settings.dashboard.suggestions.SuggestionFeatureProviderGoogleImpl;
-import com.google.android.settings.experiments.GServicesProxy;
+import com.google.android.settings.experiments.PhenotypeProxy;
 import com.google.android.settings.fuelgauge.BatterySettingsFeatureProviderGoogleImpl;
 import com.google.android.settings.fuelgauge.BatteryStatusFeatureProviderGoogleImpl;
 import com.google.android.settings.fuelgauge.PowerUsageFeatureProviderGoogleImpl;
@@ -45,14 +45,12 @@ import com.google.android.settings.search.SearchFeatureProviderGoogleImpl;
 import com.google.android.settings.security.SecuritySettingsFeatureProviderGoogleImpl;
 import com.google.android.settings.support.SupportFeatureProviderImpl;
 import com.google.android.settings.survey.SurveyFeatureProviderImpl;
-import com.google.android.settings.vpn2.AdvancedVpnFeatureProviderGoogleImpl;
 import com.google.android.settings.wifi.WifiTrackerLibProviderGoogleImpl;
 
 public class FeatureFactoryImpl extends com.android.settings.overlay.FeatureFactoryImpl {
     private AccessibilityMetricsFeatureProvider mAccessibilityMetricsFeatureProvider;
     private AccessibilitySearchFeatureProvider mAccessibilitySearchFeatureProvider;
     private AccountFeatureProvider mAccountFeatureProvider;
-    private AdvancedVpnFeatureProvider mAdvancedVpnFeatureProvider;
     private ApplicationFeatureProvider mApplicationFeatureProvider;
     private AssistGestureFeatureProvider mAssistGestureFeatureProvider;
     private AwareFeatureProvider mAwareFeatureProvider;
@@ -134,14 +132,9 @@ public class FeatureFactoryImpl extends com.android.settings.overlay.FeatureFact
 
     @Override
     public SurveyFeatureProvider getSurveyFeatureProvider(Context context) {
-        boolean enabled = false;
-        try {
-            enabled = GServicesProxy.getBoolean(context.getContentResolver(),
-                    "settingsgoogle:surveys_enabled", false);
-        } catch (SecurityException ex) {
-            Log.w("FeatureFactoryImpl", "Error reading survey feature enabled state", ex);
-        }
-        if (enabled) {
+        if (PhenotypeProxy.getBooleanFlagByPackageAndKey(context,
+                context.getString(R.string.config_settingsintelligence_package_name),
+                "HatsConfig__is_enabled", false)) {
             if (mSurveyFeatureProvider == null) {
                 mSurveyFeatureProvider = new SurveyFeatureProviderImpl(context);
             }
@@ -228,13 +221,5 @@ public class FeatureFactoryImpl extends com.android.settings.overlay.FeatureFact
             mAccessibilityMetricsFeatureProvider = new AccessibilityMetricsFeatureProviderGoogleImpl();
         }
         return mAccessibilityMetricsFeatureProvider;
-    }
-
-    @Override
-    public AdvancedVpnFeatureProvider getAdvancedVpnFeatureProvider() {
-        if (mAdvancedVpnFeatureProvider == null) {
-            mAdvancedVpnFeatureProvider = new AdvancedVpnFeatureProviderGoogleImpl();
-        }
-        return mAdvancedVpnFeatureProvider;
     }
 }
